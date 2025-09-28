@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>
-        Todo List
-    </h1>
-    <br>
-    <p>
-    <input type="text" placeholder="Todo name">
-    <input type="date" class="date-input">
-    <button onclick="addtodo()">
-        Add
-    </button>
-    </p>
-    <div class="list">
-
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="inputContainer">
+            <input type="text" id="todoInput" placeholder="Enter your task">
+            <input type="date" id="dateInput">
+            <button id="addButton">Add</button>
+        </div>
+        <ul id="todoList"></ul>
     </div>
+    
 </body>
-<script src="script.js">
-</script>
+<script src="script.js"></script>
 </html>
