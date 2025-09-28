@@ -20,5 +20,3 @@ This app lets you add, mark, delete, and store your tasks with associated dates�
 - **Vanilla JavaScript (ES6)** – Core logic (add, delete, mark complete, localStorage)
 
 ---
-
-## 📂 Project Structure
