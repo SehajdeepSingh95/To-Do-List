@@ -1,90 +1,155 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    border: none;
+    background-color: #121212;
 }
 
-body {
-    background-color: #ffffff;
-    color: #333;
-    padding: 40px;
+.container{
     text-align: center;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
-h1 {
-    font-size: 3rem;
-    color: #4CAF50;
-    margin-bottom: 20px;
-}
-
-p {
+.inputContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-input[type="text"],
-input[type="date"] {
+    margin: 20px 0;
+    border: 1px solid #333;
     padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    background-color: #1e1e1e;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: darkgreen;
-    border: 1px solid black;
-    color: white;
+#todoList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.taskItem{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #333;
     border-radius: 5px;
+    box-shadow: 0 0 10px #000;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e0e0e0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1e1e1e;
 }
 
-button:hover {
-    background-color: green;
-}
-.list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+.taskItem:hover{
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #555;
 }
 
-.todoListElementsList {
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
-    align-items: center;
-    width: 550px;
-    padding: 15px 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    font-size: 1rem;
-    gap: 20px;
-    text-align: left;
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    box-shadow: 0 0 10px #000;
+    width: 100px;
 }
 
-.todo-name,
-.todo-date {
-    font-weight: 500;
-    color: #333;
+button:active{
+    opacity: 0.7;
 }
 
-.delete-btn {
-    padding: 8px 16px;
-    background-color: #8B0000;
+.taskItem:active{
+    background-color: #4caf50;
+    color: white;
+}
+
+#todoInput{
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 10px #000;
+    font-size: 16px;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.deleteButton{
+    margin-left: 10px;
+    background-color: #f44336;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
-    justify-self: end;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #000;
 }
 
-.delete-btn:hover {
-    background-color: #a00000;
+#dateInput{
+    margin: 10px;
+    width: 18%;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    font-size: 16px;
+    color: #aaa;
+    background-color: #1e1e1e;
+}
+
+.taskdates{
+    margin: 10px;
+    width: 18%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.taskdates:hover{
+    background-color: #333;
+}
+
+.tasktext{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 10px #000;
+    font-size: 16px;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.taskContainer{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    background-color: #1e1e1e;
 }
