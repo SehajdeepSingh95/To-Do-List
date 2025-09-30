@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Tailwind To-Do List</title>
 </head>
-<body class="min-h-screen bg-gradient-to-br from-indigo-900 to-purple-900 p-4">
+<body class="min-h-screen bg-yellow-700 p-4">
 
     <div class="todo_app w-full max-w-xl bg-white mx-auto mt-24 p-6 rounded-xl shadow-2xl">
         
         <h1 class="text-3xl font-extrabold text-gray-800 flex items-center mb-6">
             To-Do List 
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 ml-2 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 ml-2 text-o-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
             </svg>
         </h1>
@@ -21,12 +21,12 @@
             <input 
                 type="text" 
                 placeholder="Add a new task..." 
-                class="todo_input flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700 transition duration-150">
+                class="todo_input flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-500 text-gray-700 transition duration-150">
             <input 
                 type="date" 
-                class="todo_date flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700 transition duration-150">
+                class="todo_date flex-grow p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-500 text-gray-700 transition duration-150">
             <button 
-                class="todo_button bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-5 rounded-lg transition duration-150 ease-in-out shadow-md hover:shadow-lg">
+                class="todo_button bg-black hover:bg-yellow-600 text-white font-semibold py-3 px-5 rounded-lg transition duration-150 ease-in-out shadow-md hover:shadow-lg">
                 Add
             </button>
         </div>
